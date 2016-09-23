@@ -42,4 +42,13 @@ class SettingsViewController: UIViewController {
         defaults.synchronize()
         //print(String(tipIndex))
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let intValue = defaults.integerForKey("tipIndex") ?? 0
+        
+        tipControl.selectedSegmentIndex = intValue
+    }
 }
