@@ -39,5 +39,16 @@ class ViewController: UIViewController {
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let defaults = UserDefaults.standard
+        let intValue = defaults.integer(forKey: "tipIndex")
+        
+        tipControl.selectedSegmentIndex = intValue
+        
+        self.calculateTip(self)
+    }
 }
 
