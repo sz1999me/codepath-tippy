@@ -14,7 +14,6 @@
 		BF67C6131D9DB06100A1B509 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF67C6111D9DB06100A1B509 /* LaunchScreen.storyboard */; };
 		BF67C61E1D9DB06100A1B509 /* cp_tippyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67C61D1D9DB06100A1B509 /* cp_tippyTests.swift */; };
 		BF67C6291D9DB06100A1B509 /* cp_tippyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67C6281D9DB06100A1B509 /* cp_tippyUITests.swift */; };
-		BF67C6371D9DC43200A1B509 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67C6361D9DC43200A1B509 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		BF67C6241D9DB06100A1B509 /* cp-tippyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cp-tippyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF67C6281D9DB06100A1B509 /* cp_tippyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cp_tippyUITests.swift; sourceTree = "<group>"; };
 		BF67C62A1D9DB06100A1B509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BF67C6361D9DC43200A1B509 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +100,6 @@
 				BF67C6081D9DB06000A1B509 /* AppDelegate.swift */,
 				BF67C60A1D9DB06000A1B509 /* ViewController.swift */,
 				BF67C60C1D9DB06000A1B509 /* Main.storyboard */,
-				BF67C6361D9DC43200A1B509 /* SettingsViewController.swift */,
 				BF67C60F1D9DB06100A1B509 /* Assets.xcassets */,
 				BF67C6111D9DB06100A1B509 /* LaunchScreen.storyboard */,
 				BF67C6141D9DB06100A1B509 /* Info.plist */,
@@ -267,7 +264,6 @@
 			files = (
 				BF67C60B1D9DB06000A1B509 /* ViewController.swift in Sources */,
 				BF67C6091D9DB06000A1B509 /* AppDelegate.swift in Sources */,
-				BF67C6371D9DC43200A1B509 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
