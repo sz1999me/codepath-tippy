@@ -39,6 +39,7 @@ class SettingsViewController: UIViewController {
         
         let defaults = UserDefaults.standard
         defaults.set(tipIndex, forKey: "tipIndex")
+        defaults.set(true, forKey: "defaultChanged")
         defaults.synchronize()
         //print(String(tipIndex))
     }

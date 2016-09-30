@@ -44,11 +44,14 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         
         let defaults = UserDefaults.standard
-        let intValue = defaults.integer(forKey: "tipIndex")
+        let defaultChanged = defaults.bool(forKey: "defaultChanged")
+        if (defaultChanged) { // only recalculate if the default is changed
+            let intValue = defaults.integer(forKey: "tipIndex")
         
-        tipControl.selectedSegmentIndex = intValue
+            tipControl.selectedSegmentIndex = intValue
         
-        self.calculateTip(self)
+            self.calculateTip(self)
+        }
     }
 }
 
