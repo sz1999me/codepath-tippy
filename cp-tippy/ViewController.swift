@@ -33,7 +33,16 @@ class ViewController: UIViewController {
         let tipPercentages = [0.18, 0.2, 0.25]
         
         let bill = Double(billField.text!) ?? 0
-        let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
+        var tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
+        
+        let defaults = UserDefaults.standard
+        let roundTip = defaults.bool(forKey: "roundTip")
+        
+        if (roundTip) {
+            tip = ceil(tip)
+        }
+        print(roundTip)
+        
         let total = bill + tip
         
         tipLabel.text = String(format: "$%.2f", tip)
@@ -44,14 +53,15 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         
         let defaults = UserDefaults.standard
+        
         let defaultChanged = defaults.bool(forKey: "defaultChanged")
-        if (defaultChanged) { // only recalculate if the default is changed
+        if (defaultChanged) { // only update segment if the default is changed
             let intValue = defaults.integer(forKey: "tipIndex")
-        
             tipControl.selectedSegmentIndex = intValue
-        
-            self.calculateTip(self)
+            defaults.set(false, forKey: "defaultChanged") // updated
         }
+        
+        self.calculateTip(self)
     }
 }
 
