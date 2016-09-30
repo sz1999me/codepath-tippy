@@ -65,7 +65,7 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Hdu-OD-0RM">
-                                <frame key="frameInset" minX="28" minY="303" width="318" height="29"/>
+                                <frame key="frameInset" minX="28" minY="297" width="318" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="10%"/>
@@ -77,6 +77,34 @@
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="YxK-uC-Bub"/>
                                 </connections>
                             </segmentedControl>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="5" id="f3s-FJ-MTa">
+                                <frame key="frameInset" minX="252" minY="359" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onPaxChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="eqT-GM-CHZ"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Number of people:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ENi-S2-LCC">
+                                <frame key="frameInset" minX="28" minY="363" width="143" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lDJ-t1-9yP">
+                                <frame key="frameInset" minX="179" minY="363" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Each person pays $0.00." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Is9-Fc-NYM">
+                                <frame key="frameInset" minX="28" minY="410" width="318" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -93,6 +121,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="billField" destination="CFx-6b-2he" id="IoQ-fs-MJV"/>
+                        <outlet property="numPersonLabel" destination="lDJ-t1-9yP" id="LhY-JS-KxA"/>
+                        <outlet property="paxStepper" destination="f3s-FJ-MTa" id="bfw-CL-Bwz"/>
+                        <outlet property="pricePerPersonLabel" destination="Is9-Fc-NYM" id="0o8-Q4-IoV"/>
                         <outlet property="tipControl" destination="Hdu-OD-0RM" id="ilY-gi-U0D"/>
                         <outlet property="tipLabel" destination="y0d-gT-WKg" id="t2o-2Q-aMd"/>
                         <outlet property="totalLabel" destination="f7A-m8-CYK" id="guE-CC-m6D"/>

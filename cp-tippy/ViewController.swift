@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var paxStepper: UIStepper!
+    @IBOutlet weak var pricePerPersonLabel: UILabel!
+    @IBOutlet weak var numPersonLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +60,22 @@ class ViewController: UIViewController {
         
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+        
+        self.onPaxChanged(self)
+    }
+    
+    @IBAction func onPaxChanged(_ sender: AnyObject) {
+        let pax = paxStepper.value
+        
+        numPersonLabel.text = String(Int(pax))
+        
+        let total = totalLabel.text!
+        let index1 = total.index(total.startIndex, offsetBy: 1)
+        let price = Double(total.substring(from: index1))
+
+        let pricePerPerson = price! / pax
+        
+        pricePerPersonLabel.text = String(format: "Each person pays $%.2f", pricePerPerson)
     }
     
     override func viewWillAppear(_ animated: Bool) {
