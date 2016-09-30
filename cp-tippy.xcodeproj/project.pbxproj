@@ -14,10 +14,10 @@
 		BF67C61E1D9DB06100A1B509 /* cp_tippyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67C61D1D9DB06100A1B509 /* cp_tippyTests.swift */; };
 		BF67C6291D9DB06100A1B509 /* cp_tippyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67C6281D9DB06100A1B509 /* cp_tippyUITests.swift */; };
 		BF67C6371D9DC43200A1B509 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67C6361D9DC43200A1B509 /* SettingsViewController.swift */; };
+		BF67C6391D9DF95400A1B509 /* launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF67C6381D9DF95400A1B509 /* launch.jpg */; };
 		BF67C63D1D9DFDDC00A1B509 /* CustomLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF67C63C1D9DFDDC00A1B509 /* CustomLaunchScreen.storyboard */; };
 		BF67C63F1D9DFE0D00A1B509 /* CustomLaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67C63E1D9DFE0D00A1B509 /* CustomLaunchScreenViewController.swift */; };
-		BF67C6451D9E048900A1B509 /* AnimatedEqualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67C6441D9E048900A1B509 /* AnimatedEqualizerView.swift */; };
-		BF67C6471D9E061300A1B509 /* launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF67C6461D9E061300A1B509 /* launch.jpg */; };
+		BF67C6431D9DFECF00A1B509 /* AnimatedEqualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67C6421D9DFECF00A1B509 /* AnimatedEqualizerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,10 +51,10 @@
 		BF67C6281D9DB06100A1B509 /* cp_tippyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cp_tippyUITests.swift; sourceTree = "<group>"; };
 		BF67C62A1D9DB06100A1B509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF67C6361D9DC43200A1B509 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		BF67C6381D9DF95400A1B509 /* launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch.jpg; sourceTree = "<group>"; };
 		BF67C63C1D9DFDDC00A1B509 /* CustomLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomLaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF67C63E1D9DFE0D00A1B509 /* CustomLaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLaunchScreenViewController.swift; sourceTree = "<group>"; };
-		BF67C6441D9E048900A1B509 /* AnimatedEqualizerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedEqualizerView.swift; sourceTree = "<group>"; };
-		BF67C6461D9E061300A1B509 /* launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch.jpg; sourceTree = "<group>"; };
+		BF67C6421D9DFECF00A1B509 /* AnimatedEqualizerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatedEqualizerView.swift; path = ../AnimatedEqualizerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +105,8 @@
 		BF67C6071D9DB06000A1B509 /* cp-tippy */ = {
 			isa = PBXGroup;
 			children = (
-				BF67C6461D9E061300A1B509 /* launch.jpg */,
-				BF67C6441D9E048900A1B509 /* AnimatedEqualizerView.swift */,
+				BF67C6421D9DFECF00A1B509 /* AnimatedEqualizerView.swift */,
+				BF67C6381D9DF95400A1B509 /* launch.jpg */,
 				BF67C6081D9DB06000A1B509 /* AppDelegate.swift */,
 				BF67C60A1D9DB06000A1B509 /* ViewController.swift */,
 				BF67C60C1D9DB06000A1B509 /* Main.storyboard */,
@@ -247,7 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF67C6471D9E061300A1B509 /* launch.jpg in Resources */,
+				BF67C6391D9DF95400A1B509 /* launch.jpg in Resources */,
 				BF67C6101D9DB06100A1B509 /* Assets.xcassets in Resources */,
 				BF67C63D1D9DFDDC00A1B509 /* CustomLaunchScreen.storyboard in Resources */,
 				BF67C60E1D9DB06100A1B509 /* Main.storyboard in Resources */,
@@ -277,7 +277,7 @@
 			files = (
 				BF67C60B1D9DB06000A1B509 /* ViewController.swift in Sources */,
 				BF67C6091D9DB06000A1B509 /* AppDelegate.swift in Sources */,
-				BF67C6451D9E048900A1B509 /* AnimatedEqualizerView.swift in Sources */,
+				BF67C6431D9DFECF00A1B509 /* AnimatedEqualizerView.swift in Sources */,
 				BF67C63F1D9DFE0D00A1B509 /* CustomLaunchScreenViewController.swift in Sources */,
 				BF67C6371D9DC43200A1B509 /* SettingsViewController.swift in Sources */,
 			);
