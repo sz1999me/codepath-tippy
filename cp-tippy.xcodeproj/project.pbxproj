@@ -15,6 +15,7 @@
 		BF67C61E1D9DB06100A1B509 /* cp_tippyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67C61D1D9DB06100A1B509 /* cp_tippyTests.swift */; };
 		BF67C6291D9DB06100A1B509 /* cp_tippyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67C6281D9DB06100A1B509 /* cp_tippyUITests.swift */; };
 		BF67C6371D9DC43200A1B509 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67C6361D9DC43200A1B509 /* SettingsViewController.swift */; };
+		BFEF00BB1D9E0A8F00B54FB3 /* Tip-Em-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEF00BA1D9E0A8F00B54FB3 /* Tip-Em-Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		BF67C6281D9DB06100A1B509 /* cp_tippyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cp_tippyUITests.swift; sourceTree = "<group>"; };
 		BF67C62A1D9DB06100A1B509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF67C6361D9DC43200A1B509 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		BFEF00BA1D9E0A8F00B54FB3 /* Tip-Em-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tip-Em-Icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		BF67C6071D9DB06000A1B509 /* cp-tippy */ = {
 			isa = PBXGroup;
 			children = (
+				BFEF00BA1D9E0A8F00B54FB3 /* Tip-Em-Icon.png */,
 				BF67C6081D9DB06000A1B509 /* AppDelegate.swift */,
 				BF67C60A1D9DB06000A1B509 /* ViewController.swift */,
 				BF67C60C1D9DB06000A1B509 /* Main.storyboard */,
@@ -238,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFEF00BB1D9E0A8F00B54FB3 /* Tip-Em-Icon.png in Resources */,
 				BF67C6131D9DB06100A1B509 /* LaunchScreen.storyboard in Resources */,
 				BF67C6101D9DB06100A1B509 /* Assets.xcassets in Resources */,
 				BF67C60E1D9DB06100A1B509 /* Main.storyboard in Resources */,
@@ -520,6 +524,7 @@
 				BF67C62F1D9DB06100A1B509 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF67C6301D9DB06100A1B509 /* Build configuration list for PBXNativeTarget "cp-tippyTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +533,7 @@
 				BF67C6321D9DB06100A1B509 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF67C6331D9DB06100A1B509 /* Build configuration list for PBXNativeTarget "cp-tippyUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +542,7 @@
 				BF67C6351D9DB06100A1B509 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
