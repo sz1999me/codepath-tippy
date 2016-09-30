@@ -104,7 +104,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="613" y="150"/>
+            <point key="canvasLocation" x="672.5" y="149.5"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="fIj-Ox-hoZ">
@@ -150,7 +150,6 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YXR-lp-qD6" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="R8C-2H-13d"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="g6x-Wn-ZdG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

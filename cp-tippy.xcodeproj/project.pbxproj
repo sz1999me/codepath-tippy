@@ -11,13 +11,10 @@
 		BF67C60B1D9DB06000A1B509 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67C60A1D9DB06000A1B509 /* ViewController.swift */; };
 		BF67C60E1D9DB06100A1B509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF67C60C1D9DB06000A1B509 /* Main.storyboard */; };
 		BF67C6101D9DB06100A1B509 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF67C60F1D9DB06100A1B509 /* Assets.xcassets */; };
+		BF67C6131D9DB06100A1B509 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF67C6111D9DB06100A1B509 /* LaunchScreen.storyboard */; };
 		BF67C61E1D9DB06100A1B509 /* cp_tippyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67C61D1D9DB06100A1B509 /* cp_tippyTests.swift */; };
 		BF67C6291D9DB06100A1B509 /* cp_tippyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67C6281D9DB06100A1B509 /* cp_tippyUITests.swift */; };
 		BF67C6371D9DC43200A1B509 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67C6361D9DC43200A1B509 /* SettingsViewController.swift */; };
-		BF67C63D1D9DFDDC00A1B509 /* CustomLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF67C63C1D9DFDDC00A1B509 /* CustomLaunchScreen.storyboard */; };
-		BF67C63F1D9DFE0D00A1B509 /* CustomLaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67C63E1D9DFE0D00A1B509 /* CustomLaunchScreenViewController.swift */; };
-		BF67C6451D9E048900A1B509 /* AnimatedEqualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67C6441D9E048900A1B509 /* AnimatedEqualizerView.swift */; };
-		BF67C6471D9E061300A1B509 /* launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF67C6461D9E061300A1B509 /* launch.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +40,7 @@
 		BF67C60A1D9DB06000A1B509 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF67C60D1D9DB06000A1B509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF67C60F1D9DB06100A1B509 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF67C6121D9DB06100A1B509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF67C6141D9DB06100A1B509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF67C6191D9DB06100A1B509 /* cp-tippyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cp-tippyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF67C61D1D9DB06100A1B509 /* cp_tippyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cp_tippyTests.swift; sourceTree = "<group>"; };
@@ -51,10 +49,6 @@
 		BF67C6281D9DB06100A1B509 /* cp_tippyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cp_tippyUITests.swift; sourceTree = "<group>"; };
 		BF67C62A1D9DB06100A1B509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF67C6361D9DC43200A1B509 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		BF67C63C1D9DFDDC00A1B509 /* CustomLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomLaunchScreen.storyboard; sourceTree = "<group>"; };
-		BF67C63E1D9DFE0D00A1B509 /* CustomLaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLaunchScreenViewController.swift; sourceTree = "<group>"; };
-		BF67C6441D9E048900A1B509 /* AnimatedEqualizerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedEqualizerView.swift; sourceTree = "<group>"; };
-		BF67C6461D9E061300A1B509 /* launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,16 +99,13 @@
 		BF67C6071D9DB06000A1B509 /* cp-tippy */ = {
 			isa = PBXGroup;
 			children = (
-				BF67C6461D9E061300A1B509 /* launch.jpg */,
-				BF67C6441D9E048900A1B509 /* AnimatedEqualizerView.swift */,
 				BF67C6081D9DB06000A1B509 /* AppDelegate.swift */,
 				BF67C60A1D9DB06000A1B509 /* ViewController.swift */,
 				BF67C60C1D9DB06000A1B509 /* Main.storyboard */,
 				BF67C6361D9DC43200A1B509 /* SettingsViewController.swift */,
 				BF67C60F1D9DB06100A1B509 /* Assets.xcassets */,
+				BF67C6111D9DB06100A1B509 /* LaunchScreen.storyboard */,
 				BF67C6141D9DB06100A1B509 /* Info.plist */,
-				BF67C63C1D9DFDDC00A1B509 /* CustomLaunchScreen.storyboard */,
-				BF67C63E1D9DFE0D00A1B509 /* CustomLaunchScreenViewController.swift */,
 			);
 			path = "cp-tippy";
 			sourceTree = "<group>";
@@ -247,9 +238,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF67C6471D9E061300A1B509 /* launch.jpg in Resources */,
+				BF67C6131D9DB06100A1B509 /* LaunchScreen.storyboard in Resources */,
 				BF67C6101D9DB06100A1B509 /* Assets.xcassets in Resources */,
-				BF67C63D1D9DFDDC00A1B509 /* CustomLaunchScreen.storyboard in Resources */,
 				BF67C60E1D9DB06100A1B509 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,8 +267,6 @@
 			files = (
 				BF67C60B1D9DB06000A1B509 /* ViewController.swift in Sources */,
 				BF67C6091D9DB06000A1B509 /* AppDelegate.swift in Sources */,
-				BF67C6451D9E048900A1B509 /* AnimatedEqualizerView.swift in Sources */,
-				BF67C63F1D9DFE0D00A1B509 /* CustomLaunchScreenViewController.swift in Sources */,
 				BF67C6371D9DC43200A1B509 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +309,14 @@
 				BF67C60D1D9DB06000A1B509 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF67C6111D9DB06100A1B509 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF67C6121D9DB06100A1B509 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
