@@ -18,6 +18,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        billField.becomeFirstResponder()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let bill = Double(billField.text!) ?? 0
+        if (bill == 0) {
+            billField.becomeFirstResponder()
+        }
     }
 
     override func didReceiveMemoryWarning() {
