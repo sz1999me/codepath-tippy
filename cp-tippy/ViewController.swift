@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         billField.becomeFirstResponder()
     }
@@ -29,14 +28,9 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         
         let bill = Double(billField.text!) ?? 0
-        if (bill == 0) {
+        if bill == 0 {
             billField.becomeFirstResponder()
         }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @IBAction func onTap(_ sender: AnyObject) {
@@ -52,7 +46,7 @@ class ViewController: UIViewController {
         let defaults = UserDefaults.standard
         let roundTip = defaults.bool(forKey: "roundTip")
         
-        if (roundTip) {
+        if roundTip {
             tip = ceil(tip)
         }
         
@@ -85,7 +79,7 @@ class ViewController: UIViewController {
         let bill = Double(billField.text!) ?? 0
         
         let defaultChanged = defaults.bool(forKey: "defaultChanged")
-        if (defaultChanged || bill == 0) { // only update segment if the default is changed
+        if defaultChanged || bill == 0 { // only update segment if the default is changed
             let intValue = defaults.integer(forKey: "tipIndex")
             tipControl.selectedSegmentIndex = intValue
             defaults.set(false, forKey: "defaultChanged") // updated
