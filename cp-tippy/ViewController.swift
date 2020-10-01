@@ -67,7 +67,9 @@ class ViewController: UIViewController {
         let index1 = total.index(total.startIndex, offsetBy: 1)
         let price = Double(total.substring(from: index1))
 
+        // Round to the nearest 5 cents. Penny has been phased out in Canada.
         let pricePerPerson = price! / pax
+        pricePerPerson = round(pricePerPerson * 20) / 20
         
         pricePerPersonLabel.text = String(format: "Each person pays $%.2f", pricePerPerson)
     }
